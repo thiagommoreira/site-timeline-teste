@@ -1,0 +1,74 @@
+body {
+    background: rgb(0,158,0);
+    background: linear-gradient(90deg, rgba(0,158,0,1) 19%, rgba(255,255,150,1) 89%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 300px);
+    grid-auto-rows: 300px;
+    grid-gap: 30px;
+    width: 80%;
+    border: 5px solid black;
+    justify-content: center;
+    margin: auto;
+    grid-auto-flow: dense;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    
+}
+
+.esquerda-foto {
+    grid-column: 3 / 10;
+    grid-row: 2 / 10;
+}
+
+.direita-foto {
+    grid-column: 12 / 19;
+    grid-row: 2 / 10;
+}
+
+.item1 {
+
+}
+
+.item3 {
+    color: red;
+    
+    
+}
+
+.item4 {
+    
+}
+
+.imagem-equipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-gap: 15px;
+    justify-content: center;
+    grid-template-areas: 'titulo' 'imagem' 'imagem''imagem''imagem';
+}
+
+.imagem-equipe h2 {
+    grid-area: titulo;
+}
+.imagem-equipe img {
+    grid-area: imagem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+h2 {
+    text-align: center;
+}
